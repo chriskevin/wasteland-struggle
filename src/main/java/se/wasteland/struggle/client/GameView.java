@@ -13,7 +13,7 @@ import se.wasteland.struggle.sound.Player;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
+import java.util.List;
 import javax.swing.Timer;
 
 public class GameView extends Screen implements ActionListener {
@@ -103,7 +103,7 @@ public class GameView extends Screen implements ActionListener {
      * This method removes all objects that the game state has assigned.
      * @param objects
      */
-    private void removeObjects(ArrayList<Integer> objects) {
+    private void removeObjects(List<Integer> objects) {
         for (int i = 0; i < objects.size(); i++) {
             int refID = objects.get(i);
 
@@ -130,7 +130,7 @@ public class GameView extends Screen implements ActionListener {
      * This method spawns Boxes and RAhks.
      * @param objects
      */
-    private void spawnObjects(ArrayList<String[]> objects) {
+    private void spawnObjects(List<String[]> objects) {
         for (int i = 0; i < objects.size(); i++) {
             int x = Integer.parseInt(objects.get(i)[0]);
             int y = Integer.parseInt(objects.get(i)[1]);
@@ -151,7 +151,7 @@ public class GameView extends Screen implements ActionListener {
      * This method updates the positions of the Boxes and RAhks
      * @param items
      */
-    private void updateItemPositions(ArrayList<int[]> items) {
+    private void updateItemPositions(List<int[]> items) {
         for (int i = 0; i < items.size(); i++) {
             int refID = items.get(i)[0];
             int x = items.get(i)[1];
@@ -173,7 +173,7 @@ public class GameView extends Screen implements ActionListener {
      * This methid updates positions of all NPCs in the game.
      * @param npcs
      */
-    private void updateNPCPositions(ArrayList<int[]> npcs) {
+    private void updateNPCPositions(List<int[]> npcs) {
         for (int i = 0; i < npcs.size(); i++) {
             int refID = npcs.get(i)[0];
             int x = npcs.get(i)[1];
@@ -202,7 +202,7 @@ public class GameView extends Screen implements ActionListener {
         }
     }
 
-    /*
+    /**
      * This method updates all player scoores. 
      */
     private void updateScore(int[] score) {

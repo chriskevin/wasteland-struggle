@@ -6,8 +6,6 @@ import java.util.List;
 public class Character extends GameObject {
 
     /**
-     * Character class instance variabels.
-     *
      * dx, temporary X movement.
      * dy, temporary Y movement.
      * vel, the character speed, velocity.
@@ -18,51 +16,24 @@ public class Character extends GameObject {
     protected int lastX = 0;
     protected int lastY = 0;
     protected int vel = 5;
-    protected List<String> conditions = new ArrayList();
+    protected List<String> conditions = new ArrayList<>();
     protected boolean move = true;
 
     protected int xCounter = 0;
     protected int yCounter = 0;
 
-    /**
-     * This Construcor takes 2 arguments. X and Y which becomes the character
-     * start positions.
-     * @param x
-     * @param y
-     */
     public Character(int x, int y) {
         super(x, y);
     }
 
-    /**
-     * This Construcotr takes 4 arguments. startPosition X and startposition Y,
-     * the width and the height of the Character.
-     * @param x
-     * @param y
-     * @param width
-     * @param height
-     */
     public Character(int x, int y, int width, int height) {
         super(x, y, width, height);
     }
 
-    /**
-     * This Constructor takes 5 arguments. startPosition X and startposition Y,
-     * the width and the height of the Character. It also sets the Image via the imagePath.
-     * @param x
-     * @param y
-     * @param width
-     * @param height
-     * @param imagePath
-     */
     public Character(int x, int y, int width, int height, String imagePath) {
         super(x, y, width, height, imagePath);
     }
 
-    /**
-     * This method adds a new conditon to the character.
-     * @param condition
-     */
     public void addCondition(String condition) {
         boolean exsists = false;
 
@@ -80,18 +51,10 @@ public class Character extends GameObject {
         }
     }
 
-    /**
-     * This method returns the list of conditions.
-     * @return
-     */
     public List<String> getConditions() {
         return conditions;
     }
 
-    /**
-     * This method returns the velocity of the character.
-     * @return
-     */
     public double getVel() {
         return vel;
     }
@@ -113,10 +76,6 @@ public class Character extends GameObject {
         }
     }
 
-    /**
-     * This method removes a condition from the character.
-     * @param condition
-     */
     public void removeCondition(String condition) {
         conditions.remove(condition);
     }
@@ -140,7 +99,6 @@ public class Character extends GameObject {
             x = X;
             xCounter = 0;
         }
-            //lastX = X;
     }
     /**
      * This method sets y to the previous y coordinate. it is used to prevent the player to
@@ -153,7 +111,6 @@ public class Character extends GameObject {
             y = Y;
             yCounter = 0;
         }
-        //lastY = Y;
     }
 
     /**

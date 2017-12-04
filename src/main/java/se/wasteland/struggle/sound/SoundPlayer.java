@@ -133,9 +133,6 @@ public class SoundPlayer extends Thread {
         try {
             channel = (SourceDataLine) AudioSystem.getLine(info);
             channel.open(format);
-        } catch (LineUnavailableException e) {
-            e.printStackTrace();
-            return;
         } catch (Exception e) {
             e.printStackTrace();
             return;
@@ -164,10 +161,9 @@ public class SoundPlayer extends Thread {
 
         } catch (IOException e) {
             e.printStackTrace();
-            return;
         } finally {
 
-            if (loop == true) {
+            if (loop) {
                 loopPlay();
             } else {
                 channel.drain();

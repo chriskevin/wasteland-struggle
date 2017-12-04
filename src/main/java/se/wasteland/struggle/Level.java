@@ -20,6 +20,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JPanel;
 
 public class Level extends JPanel {
@@ -37,12 +38,12 @@ public class Level extends JPanel {
      */
     public int gameObjectCount = 0;
 
-    public ArrayList<Item>     items     = new ArrayList();
-    public ArrayList<NPC>      npcs      = new ArrayList();
-    public ArrayList<MutantPC> players   = new ArrayList();
-    public ArrayList<Tile>     tempTiles = null;
-    public ArrayList<Tile>     tiles     = new ArrayList();
-    public ArrayList<Zone>     zones     = new ArrayList();
+    public List<Item> items     = new ArrayList<>();
+    public List<NPC>      npcs      = new ArrayList<>();
+    public List<MutantPC> players   = new ArrayList<>();
+    public List<Tile>     tempTiles = null;
+    public List<Tile>     tiles     = new ArrayList<>();
+    public List<Zone>     zones     = new ArrayList<>();
 
     public Dimension mapDimension;
     public Dimension tileDimension;
@@ -78,7 +79,7 @@ public class Level extends JPanel {
      * This method creates a map parser and writes data to the MapData
      * object. It then uses the map data to create all game objects.
      */
-    public void build() throws MalformedLevelException {
+    private void build() throws MalformedLevelException {
         // Set the start coordinates
         int currentX = 0;
         int currentY = 0;
@@ -99,7 +100,7 @@ public class Level extends JPanel {
         mapDimension = new Dimension(mapWidth, mapHeight);
         tileDimension = new Dimension(tileSize, tileSize);
 
-        ArrayList<String[][]> tileData = mapData.getTiles();
+        List<String[][]> tileData = mapData.getTiles();
 
         // Fill rows
         while (currentY <= mapHeight) {
@@ -171,46 +172,27 @@ public class Level extends JPanel {
         graphics.dispose();
     }
 
-    /**
-     * This method paints all items.
-     * @param g2D A Graphics2D object
-     */
     private void paintItems(Graphics2D g2D) {
-        for (int i = 0; i < items.size(); i++) {
-            Item tempItem = items.get(i);
-            g2D.drawImage(tempItem.getImage(), tempItem.getX(), tempItem.getY(), this);
-        }
+        items.forEach(x -> {
+            g2D.drawImage(x.getImage(), x.getX(), x.getY(), this);
+        });
     }
 
-    /**
-     * This method paints all NPCs.
-     * @param g2D A Graphics2D object
-     */
     private void paintNPCs(Graphics2D g2D) {
-        for (int i = 0; i < npcs.size(); i++) {
-            NPC tempNpc = npcs.get(i);
-            g2D.drawImage(tempNpc.getImage(), tempNpc.getX(), tempNpc.getY(), this);
-        }
+        npcs.forEach(x -> {
+            g2D.drawImage(x.getImage(), x.getX(), x.getY(), this);
+        });
     }
 
-    /**
-     * This method paints the player (Single player only).
-     * @param g2D A Graphics2D object
-     */
     private void paintPC(Graphics2D g2D) {
         if (pc != null)
             g2D.drawImage(pc.getImage(), pc.getX(), pc.getY(), this);
     }
 
-    /**
-     * This method paints all multiplayer players.
-     * @param g2D A Graphics2D object
-     */
     private void paintPlayers(Graphics2D g2D) {
-        for (int i = 0; i < players.size(); i++) {
-            MutantPC tempOpponent = players.get(i);
-            g2D.drawImage(tempOpponent.getImage(), tempOpponent.getX(), tempOpponent.getY(), this);
-        }
+        players.forEach(x -> {
+            g2D.drawImage(x.getImage(), x.getX(), x.getY(), this);
+        });
     }
 
     /**
@@ -219,23 +201,17 @@ public class Level extends JPanel {
      */
     private void paintTempTiles(Graphics2D g2D) {
         if (tempTiles != null) {
-            for (int i = 0; i < tempTiles.size(); i++) {
-                Tile tempTile = tempTiles.get(i);
-                g2D.drawImage(tempTile.getImage(), tempTile.getX(), tempTile.getY(), this);
-            }
+            tempTiles.forEach(x -> {
+                g2D.drawImage(x.getImage(), x.getX(), x.getY(), this);
+            });
         }
     }
 
-    /**
-     * This method paints all tiles.
-     * @param g2D A Graphics2D object
-     */
     private void paintTiles(Graphics2D g2D) {
         if (tempTiles == null) {
-            for (int i = 0; i < tiles.size(); i++) {
-                Tile tempTile = tiles.get(i);
-                g2D.drawImage(tempTile.getImage(), tempTile.getX(), tempTile.getY(), this);
-            }
+            tiles.forEach(x -> {
+                g2D.drawImage(x.getImage(), x.getX(), x.getY(), this);
+            });
         }
     }
 

@@ -101,7 +101,7 @@ public class ServerClientConnect extends Observable  implements Runnable {
         createServerSocket();
 
        // kÃ¶r skicka och ta emot i en oÃ¤ndlig loop
-        while(allConnected == false){
+        while (!allConnected) {
             System.out.println("Wating for clients");
             try {
                outputTextArea.append("Waiting for client to connect\n");
@@ -130,7 +130,7 @@ public class ServerClientConnect extends Observable  implements Runnable {
     * This method connects the clients.
     */
     public void connectClients(){
-        while(allConnected == false){
+        while (!allConnected){
             System.out.println("Wating for clients");
             try {
                outputTextArea.append("Waiting for client to connect\n");
@@ -160,9 +160,9 @@ public class ServerClientConnect extends Observable  implements Runnable {
     public void restartGame() {
         disConnectedPlayerCount++;
 
-        if(threadsToClose == disConnectedPlayerCount){
+        if (threadsToClose == disConnectedPlayerCount) {
             outputTextArea.append("Waiting for client to connect\n");
-            for(int h = 0; h < numberOfPlayers; h++){
+            for (int h = 0; h < numberOfPlayers; h++) {
                 handler[h].killRecieveThread();
                 System.out.println(handler[h].getR());
                 handler[h].killSendThread();

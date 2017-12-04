@@ -104,6 +104,7 @@ public class ClientHandler implements Observer {
     public String getR(){
         return reciever.getState().toString();
     }
+
     /**
      * This method is used for checking the status of the send thread.
      * @return
@@ -111,6 +112,7 @@ public class ClientHandler implements Observer {
     public String getS(){
         return sender.getState().toString();
     }
+
     /**
      * This method is used för killing the reciever thread
      */

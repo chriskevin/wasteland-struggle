@@ -1,6 +1,3 @@
-/*
- * This class is complete. Don't need any changes.
- */
 package se.wasteland.struggle.client;
 
 import se.wasteland.struggle.data.GameState;
@@ -113,6 +110,7 @@ public class ClientCommunication extends Observable implements Runnable {
             inStream.readObject();
             start++;
         } while (start < 2);
+
         System.out.println("****START****");
         active = true;
         clientThread.start();
@@ -120,10 +118,6 @@ public class ClientCommunication extends Observable implements Runnable {
         notifyObservers();
     }
 
-    /**
-     * This method checks if the communicator is active
-     * @return
-     */
     public boolean isActive() {
         return active;
     }
@@ -133,7 +127,7 @@ public class ClientCommunication extends Observable implements Runnable {
      * to recive gamestate objects from the gameserver,
      * and forwards it to gameView.
      */
-    public void receiveObject() {
+    private void receiveObject() {
         try {
             GameState gameState = (GameState) inStream.readObject();
             inGame.readGameState(gameState);
@@ -150,7 +144,7 @@ public class ClientCommunication extends Observable implements Runnable {
      * The thread run method.
      */
     public void run() {
-        while (gameOver == false) {
+        while (!gameOver) {
             receiveObject();
         }
     }
@@ -158,7 +152,6 @@ public class ClientCommunication extends Observable implements Runnable {
     /**
      * sendObject anvÃƒÂ¤nds fÃƒÂ¶r att sÃƒÂ¤nda
      * klientdata till servern.
-     * @param in
      */
     public void sendObject() {
         try {
@@ -173,7 +166,7 @@ public class ClientCommunication extends Observable implements Runnable {
      * This method is used for the creation
      * of references between this class and
      * the ClientData class.
-     * @param gameView
+     * @param clientData
      */
     public void setClientData(ClientData clientData) {
         this.clientData = clientData;
@@ -182,7 +175,7 @@ public class ClientCommunication extends Observable implements Runnable {
     /**
      * This method is used for the creation of references
      * between this class and GameView class.
-     * @param gameView
+     * @param inGame
      */
     public void setGameViewReference(InGameScreen inGame) {
         this.inGame = inGame;

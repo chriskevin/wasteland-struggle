@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.net.Socket;
 
 public class RecieveThread extends Thread {
+
     /**
      * playerID     The clients ID.
      * inStream     The recieving stream.
@@ -15,7 +16,6 @@ public class RecieveThread extends Thread {
      * server       Reference to the server.
      * run          If its running?
      */
-
     private int playerID;
     private ObjectInputStream inStream;
     private ClientHandler handler;
@@ -23,7 +23,8 @@ public class RecieveThread extends Thread {
     private ServerClientConnect server;
     private boolean run = true;
 
-    /**This is the constructor for this class. It takes
+    /**
+     * This is the constructor for this class. It takes
      * an socket and a playerId as parameters and
      * starts an instream to be able to recive objects.
      * @param clientSocket
@@ -47,7 +48,6 @@ public class RecieveThread extends Thread {
      */
     public void recieveClientInput() {
             try {
-                //System.out.println("Recieve");
                 ClientData clientData = (ClientData) inStream.readObject();
                 clientData.setPlayerID(playerID);
                 engine.readClientData(clientData);
@@ -66,20 +66,22 @@ public class RecieveThread extends Thread {
         run = false;
     }
     
-    @Override
-    /**This is the main thread of this class
+    /**
+     * This is the main thread of this class
      * where the recieveClientInput() method
      * is being run.
      */
+    @Override
     public void run() {
         System.out.println("RecieveThread: start Run");
-        while(run == true){
+        while (run) {
             recieveClientInput();
         }
         handler.killHandler();
     }
 
-    /**This method sets the nesserary refernces between this
+    /**
+     * This method sets the nesserary refernces between this
      * class and the ServerEnginge class.
      * @param engine
      */

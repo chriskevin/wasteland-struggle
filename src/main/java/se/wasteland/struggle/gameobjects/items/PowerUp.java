@@ -19,9 +19,6 @@ public class PowerUp extends Item implements ActionListener {
     protected String effect = "";
     protected Timer effectTimer;
 
-    /**
-     * The class construcoter that creates a new effecttimer.
-     */
     public PowerUp() {
         super();
         effectTimer = new Timer(duration, this);
@@ -60,30 +57,14 @@ public class PowerUp extends Item implements ActionListener {
         effectTimer.stop();
     }
 
-    /**
-     * This methodreturns the effetct of the powerup.
-     * @return
-     */
     public String getEffect() {
         return effect;
     }
 
-    /**
-     * This method checks if the powerup is active and then returns true, else it returns false.
-     * @return
-     */
     public boolean isActive() {
-        if (effectTimer.isRunning()) {
-            return true;
-        } else {
-            return false;
-        }
+        return effectTimer.isRunning();
     }
 
-    /**
-     * This method returns the control variable expired.
-     * @return
-     */
     public boolean hasExpired() {
         return expired;
     }

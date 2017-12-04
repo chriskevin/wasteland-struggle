@@ -25,6 +25,7 @@ import java.util.List;
 import javax.swing.Timer;
 
 public class ServerEngine implements ActionListener {
+
     /**
      * playTime         The duration which you can play.
      * passedTime       The time that has passed.
@@ -35,7 +36,6 @@ public class ServerEngine implements ActionListener {
      * winTimer         The counter for the play time.
      * winCondition     The conditon for winning.
      */
-
     private int playTime;
     private int passedTime = 0;
     private GameState gameState;

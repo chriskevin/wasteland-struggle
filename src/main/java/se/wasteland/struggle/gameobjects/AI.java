@@ -12,5 +12,5 @@ import java.util.List;
  * The act() method describes what the AI controlled object is supposed to do.
  */
 public interface AI {
-    public abstract void act(List players);
+    void act(List players);
 }

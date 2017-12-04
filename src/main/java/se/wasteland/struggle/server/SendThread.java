@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class SendThread extends Thread {
+
     /**
      * gameOver     Game over or not.
      * run          If its running.
@@ -15,7 +16,6 @@ public class SendThread extends Thread {
      * gameState    Reference to the game state.
      * outStream    The sending stream.
      */
-
     private boolean run = true;
     private int playerID;
     
@@ -60,7 +60,7 @@ public class SendThread extends Thread {
      */
     public void run() {
         System.out.println("SendThread: start Run");
-        while (run == true) {
+        while (run) {
             sendGameState();
             try {
                 this.sleep(12);
@@ -79,8 +79,6 @@ public class SendThread extends Thread {
      * listening.
      */
     public synchronized void sendGameState() {
-        //System.out.println("Send");
-        //System.out.println("PLAYERID=" + playerID);
         try {
             outStream.reset();
             gameState.playerID = playerID;

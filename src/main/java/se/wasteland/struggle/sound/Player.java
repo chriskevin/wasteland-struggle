@@ -1,16 +1,3 @@
-/*
- * This class is complete and should not be altered!
- *
- *
- * Class Player initiates the sounds that will play by starting
- * a new thead (SoundPlayer) and sends the file location and
- * decides if the loop should be looped or not.
- *
- * Channel1 is used to loop the track and is best used for background music.
- *
- * Channel2 and 3 is used for overlaying soundeffects tha wil play ones depending
- * on the interaction from the player.
- */
 package se.wasteland.struggle.sound;
 
 public class Player {
@@ -18,10 +5,10 @@ public class Player {
     /**
      * soundFileLocation stores the sounds location on the harddrive.
      */
-    public static String[] soundFileLocation = new String[17];
-    SoundPlayer channel1;
-    SoundPlayer channel2;
-    SoundPlayer channel3;
+    private static String[] soundFileLocation = new String[17];
+    private SoundPlayer channel1;
+    private SoundPlayer channel2;
+    private SoundPlayer channel3;
 
 
     /**
@@ -92,21 +79,21 @@ public class Player {
      * This method sets the sound locations of the sounds implemented in the
      */
     public void setSounds() {
-        soundFileLocation[1] = "Ljudfiler\\BackgroundMusic\\MenuBackground.wav";
-        soundFileLocation[2] = "Ljudfiler\\BackgroundMusic\\mainTheme.wav";
-        soundFileLocation[3] = "Ljudfiler\\Mutant\\Mutant_Get_Egg.wav";
-        soundFileLocation[4] = "Ljudfiler\\Mutant\\Mutant_Leave_Egg.wav";
-        soundFileLocation[5] = "Ljudfiler\\Mutant\\Mutant_Wall_Collide.wav";
-        soundFileLocation[6] = "Ljudfiler\\Mutant\\Mutant_Ball_Bite.wav";
-        soundFileLocation[7] = "Ljudfiler\\Mutant\\Mutant_Mutant_Collide.wav";
-        soundFileLocation[8] = "Ljudfiler\\Behemoth\\Behemoth_Growl.wav";
-        soundFileLocation[9] = "Ljudfiler\\BackgroundMusic\\MenuChoice.wav";
-        soundFileLocation[10] = "Ljudfiler\\Mutant\\Mutant_End_Win.wav";
-        soundFileLocation[11] = "Ljudfiler\\Mutant\\Mutant_End_Loose.wav";
-        soundFileLocation[12] = "Ljudfiler\\Rakh\\Rakh_Pickup_Sound.wav";
-        soundFileLocation[13] = "Ljudfiler\\Mutant\\Mutant_Rakh_Pickup.wav";
-        soundFileLocation[14] = "Ljudfiler\\Mutant\\Mutant_Behemoth_Clash.wav";
-        soundFileLocation[15] = "Ljudfiler\\Rakh\\Rakh_Drop_Sound.wav";
+        soundFileLocation[1] = "/sound/music/MenuBackground.wav";
+        soundFileLocation[2] = "/sound/music/mainTheme.wav";
+        soundFileLocation[3] = "/sound/mutant/Mutant_Get_Egg.wav";
+        soundFileLocation[4] = "/sound/mutant/Mutant_Leave_Egg.wav";
+        soundFileLocation[5] = "/sound/mutant/Mutant_Wall_Collide.wav";
+        soundFileLocation[6] = "/sound/mutant/Mutant_Ball_Bite.wav";
+        soundFileLocation[7] = "/sound/mutant/Mutant_Mutant_Collide.wav";
+        soundFileLocation[8] = "/sound/behemoth/Behemoth_Growl.wav";
+        soundFileLocation[9] = "/sound/music/MenuChoice.wav";
+        soundFileLocation[10] = "/sound/mutant/Mutant_End_Win.wav";
+        soundFileLocation[11] = "/sound/mutant/Mutant_End_Loose.wav";
+        soundFileLocation[12] = "/sound/rakh/Rakh_Pickup_Sound.wav";
+        soundFileLocation[13] = "/sound/mutant/Mutant_Rakh_Pickup.wav";
+        soundFileLocation[14] = "/sound/mutant/Mutant_Behemoth_Clash.wav";
+        soundFileLocation[15] = "/sound/rakh/Rakh_Drop_Sound.wav";
 
     }
 }

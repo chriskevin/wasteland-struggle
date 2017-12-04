@@ -91,7 +91,7 @@ public class Behemoth extends NPC {
      */
     public void doBehemothBehaviour() {
 
-        if (returning == false) {
+        if (!returning) {
             checkForPlayerPresence();
             moveBehemoth(3, squareSize, vel); // Direction 3- Down, pixelLength, pixels per iteration(speed)
             checkForPlayerPresence();
@@ -100,7 +100,7 @@ public class Behemoth extends NPC {
             moveBehemoth(2, squareSize, vel); // Direction 2- Up, pixelLength, pixels per iteration(speed)
             checkForPlayerPresence();
             moveBehemoth(1, squareSize, vel); // Direction 1- Right, pixelLength, pixels per iteration(speed)
-        } else if (returning == true && hunting == false) {
+        } else if (returning && !hunting) {
             dx = 0;
             dy = 0;
             getHome();
@@ -111,16 +111,17 @@ public class Behemoth extends NPC {
      * This method uses the playerRectangles and the Behemoth detectArea(Rectangle) to check if they collide.
      * If they do, a human is near and the rushPlayer(playerId) method is invoked.
      */
-    public void checkForPlayerPresence() {
-        playerRectangles = new ArrayList();
+    private void checkForPlayerPresence() {
+        playerRectangles = new ArrayList<>();
         for (int i = 0; i < playerList.size(); i++) {
             playerRectangles.add(playerList.get(i).getBounds());
         }
+
         detectRectangle = new Rectangle(this.getX() - this.getWidth(), this.getY() - this.getHeight(), detectArea.width, detectArea.height);
+
         for (int j = 0; j < playerRectangles.size(); j++) {
-            // AXEL MÃ…STE PILLA DETTA SÃ… ATT MAN KAN FLY FRÃ…N B UTAN ATT DEN STICKER!
             if (!playerRectangles.get(j).intersects(detectRectangle) ) {
-                if (hunting == true) {
+                if (hunting) {
                     /*dx = 0;
                     dy = 0;
                     returning = true;
@@ -128,16 +129,15 @@ public class Behemoth extends NPC {
                     //System.out.println("Player out of area!");
                     System.out.println("intersects " +playerRectangles.get(j).intersects(detectRectangle));
                     System.out.println("hunting " + hunting);
-                } else if (hunting == false) {
+                } else if (!hunting) {
                     System.out.println("Does not hunt");
                 }
-            }
-            else if (playerRectangles.get(j).intersects(detectRectangle) ) {
-                if (hunting == false && returning == false) {
+            } else if (playerRectangles.get(j).intersects(detectRectangle) ) {
+                if (!hunting && !returning) {
                     speedSet = false;
                     hunting = true;
                     rushPlayer(j);
-                } else if (hunting == true) {
+                } else if (hunting) {
                     dx = 0;
                     dy = 0;
                     rushPlayer(j);
@@ -162,8 +162,7 @@ public class Behemoth extends NPC {
         int behemothRealY = this.getY();// + (this.getHeight()/2);
 
         //When the targetPlayer is in his zone or has been intersected
-        //The behemoth should return to itÃƒâ€šÃ‚Â´s "home". Otherwise it should get closer to its target.
-
+        //The behemoth should return to it's "home". Otherwise it should get closer to its target.
 
         if (behemothBounds.intersects(targetBounds)) {
             System.out.println("player HIT!");
@@ -187,26 +186,26 @@ public class Behemoth extends NPC {
     }
 
     /**
-     * This method getÃƒâ€šÃ‚Â´s the Behemoth home after a successfull or unsuccessfull hunt.
-     * The Behemoth getÃƒâ€šÃ‚Â´s back home and on itÃƒâ€šÃ‚Â´s way home itÃƒâ€šÃ‚Â´s not interfering with any players.
+     * This method gets the Behemoth home after a successfull or unsuccessfull hunt.
+     * The Behemoth gets back home and on it's way home it's not interfering with any players.
      * The method uses interruptX and interruptY for navigation backhome.
      */
     public void getHome() {
         System.out.println("getHome()");
         // the distanceLeft fields are used to change the dx and dy when the behemoth
-        // closes itÂ´s "home". Anti-bug code =)
+        // closes it's "home". Anti-bug code =)
         int xDistanceLeft = this.getX() - startPosX;
         int yDistanceLeft = this.getY() - startPosY;
 
 
-        if (this.getX() > startPosX) { //vÃ¤nster
+        if (this.getX() > startPosX) { // Left
             if (xDistanceLeft > -10 && xDistanceLeft < 10) {
                 dx -= 1;
             } else {
                 dx -= vel * 2;
             }
         }
-        if (this.getX() < startPosX) { // HÃ¶ger
+        if (this.getX() < startPosX) { // Right
             if (xDistanceLeft > -10 && xDistanceLeft < 10) {
                 dx += 1;
             } else {
@@ -251,14 +250,14 @@ public class Behemoth extends NPC {
     private void moveBehemoth(int dir, int length, int speed) {
         switch (dir) {
             case 0: { // --- left ----
-                if (speedSet == false && case0 == false && case1 == false && case2 == false && case3 == false) {
+                if (!speedSet && !case0 && !case1 && !case2 && !case3) {
                     System.out.println("left");
                     startPositionX = this.getX();
                     dx -= speed;
                     speedSet = true;
                     case0 = true;
                 }
-                if (x <= startPositionX - length && speedSet == true && case0 == true) {
+                if (x <= startPositionX - length && speedSet && case0) {
                     dx = 0;
                     speedSet = false;
                     case0 = false;
@@ -266,14 +265,14 @@ public class Behemoth extends NPC {
                 break;
             }
             case 1: { // ---- right ----
-                if (speedSet == false && case0 == false && case1 == false && case2 == false && case3 == false) {
+                if (!speedSet && !case0 && !case1 && !case2 && !case3) {
                     System.out.println("right");
                     startPositionX = this.getX();
                     dx += speed;
                     speedSet = true;
                     case1 = true;
                 }
-                if (x >= startPositionX + length && speedSet == true && case1 == true) {
+                if (x >= startPositionX + length && speedSet && case1) {
                     dx = 0;
                     speedSet = false;
                     case1 = false;
@@ -281,14 +280,14 @@ public class Behemoth extends NPC {
                 break;
             }
             case 2: { // --- up ---
-                if (speedSet == false && case0 == false && case1 == false && case2 == false && case3 == false) {
+                if (!speedSet && !case0 && !case1 && !case2 && !case3) {
                     System.out.println("up");
                     startPositionY = this.getY();
                     dy -= speed;
                     speedSet = true;
                     case2 = true;
                 }
-                if (y <= startPositionY - length && speedSet == true && case2 == true) {
+                if (y <= startPositionY - length && speedSet && case2) {
                     dy = 0;
                     speedSet = false;
                     case2 = false;

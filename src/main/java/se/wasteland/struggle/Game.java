@@ -38,13 +38,11 @@ public class Game extends JFrame implements Observer {
 
     public ClientCommunication clientComm;
     private ExceptionHandler exceptionHandler;
-    //public Settings settings;
 
-    private ArrayList<Screen> screens = new ArrayList();
+    private ArrayList<Screen> screens = new ArrayList<>();
 
     public AboutScreen aboutScreen;
     public ControlsSettingsScreen controlsSettingsScreen;
-    //public Engine engine;
     public GameView gameView;
     public InGameScreen inGameScreen;
     public JoinGameScreen joinGameScreen;
@@ -88,10 +86,11 @@ public class Game extends JFrame implements Observer {
      */
     private void changeView(Screen screen) {
         currentView = screen;
-        for (int i = 0; i < screens.size(); i++) {
-            if (!screens.get(i).equals(screen))
-                screens.get(i).setVisible(false);
-        }
+        screens
+                .stream()
+                .filter(x -> !x.equals(screen))
+                .forEach(x -> x.setVisible(false));
+
         screen.setVisible(true);
     }
 

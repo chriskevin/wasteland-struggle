@@ -2,6 +2,7 @@ package se.wasteland.struggle.data;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 public class GameState implements Serializable {
     /**
@@ -25,9 +26,9 @@ public class GameState implements Serializable {
     public boolean gameOver = false;
     public int pause = 0;
 
-    public ArrayList<int[]> NPCS = new ArrayList();
-    public ArrayList<int[]> items = new ArrayList();
-    public ArrayList<Integer> removeItems = new ArrayList();
-    public ArrayList<Integer> removeNPCs  = new ArrayList();
-    public ArrayList<String[]> spawnItems = new ArrayList();
+    public List<int[]> NPCS = new ArrayList<>();
+    public List<int[]> items = new ArrayList<>();
+    public List<Integer> removeItems = new ArrayList<>();
+    public List<Integer> removeNPCs  = new ArrayList<>();
+    public List<String[]> spawnItems = new ArrayList<>();
 }

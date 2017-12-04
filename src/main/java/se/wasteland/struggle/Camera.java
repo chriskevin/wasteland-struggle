@@ -12,7 +12,8 @@ import java.awt.Rectangle;
 import java.util.ArrayList;
 
 final public class Camera {
-    /*
+
+    /**
      * speed       The speed which the camera moves at.
      * targetLastX The targets latest x position.
      * targetLastY The targets latest y position.
@@ -165,7 +166,7 @@ final public class Camera {
      * tempTiles list.
      */
     private void updatePOV() {
-        level.tempTiles = new ArrayList();
+        level.tempTiles = new ArrayList<>();
 
         // Find the start index
         for (int i = 0; i < level.tiles.size(); i++) {

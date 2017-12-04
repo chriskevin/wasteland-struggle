@@ -1,7 +1,3 @@
-/**
- * This class is as of now complete. Don't make changes unless necessary!
- */
-
 package se.wasteland.struggle.gameobjects;
 
 import se.wasteland.struggle.Key;
@@ -16,5 +12,5 @@ import se.wasteland.struggle.Key;
  * is pressed(state) or released(state).
  */
 public interface Playable {
-    public abstract void doWhen(Key key);
+    void doWhen(Key key);
 }

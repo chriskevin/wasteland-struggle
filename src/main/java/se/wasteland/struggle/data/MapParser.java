@@ -1,7 +1,3 @@
-/*
- * This class is as of now complete. Don't make changes unless necessary!
- */
-
 package se.wasteland.struggle.data;
 
 import java.io.IOException;
@@ -79,10 +75,7 @@ public class MapParser {
      * returns true or false.
      */
     private boolean readContent(Node node) {
-        if (node.getNodeName().equals("content"))
-            return true;
-        else
-            return false;
+        return node.getNodeName().equals("content");
     }
 
     /**
