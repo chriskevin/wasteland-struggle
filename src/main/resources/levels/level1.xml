@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map width="1600" height="1600" dimension="64">
+  <metadata game="wasteland-struggle" version="0.1" date="2000-03-24" author="Chris Sundberg"/>
+	
+  <level number="1">
+    <row>
+	  <!-- Row 1 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 2 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="01"/>
+	  <tile type="floor" texture="01">
+	    <content type="multiplayerpc" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="03"/>
+	  <tile type="floor" texture="03">
+	    <content type="multiplayerpc" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="03"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 3 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="03"/>
+      <tile type="floor" texture="03"/>
+      <tile type="floor" texture="03"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 4 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="01"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="03"/>
+      <tile type="floor" texture="03"/>
+      <tile type="floor" texture="03"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 5 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 6 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 7 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 8 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="17"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="14"/>
+      <tile type="floor" texture="14"/>
+      <tile type="floor" texture="14"/>
+      <tile type="floor" texture="14"/>
+      <tile type="floor" texture="18"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 9 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 10 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00">
+	    <content type="npc" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="10"/>
+      <tile type="floor" texture="11"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 11 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+      <tile type="floor" texture="30"/>
+	  <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="19"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="15"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 12 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="behemoth" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 13 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 14 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 15 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30">
+	    <content type="rakh" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 16 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="30"/>
+      <tile type="floor" texture="30"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 17 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="17"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="14"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="11"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 18 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="11"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 19 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="12"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="10"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="11"/>
+      <tile type="floor" texture="10"/>
+      <tile type="floor" texture="13"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 20 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="19"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="15"/>
+      <tile type="floor" texture="15"/>
+      <tile type="floor" texture="15"/>
+      <tile type="floor" texture="15"/>
+      <tile type="floor" texture="16"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 21 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 22 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 23 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="02"/>
+	  <tile type="floor" texture="02">
+	    <content type="multiplayerpc" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="04"/>
+	  <tile type="floor" texture="04">
+	    <content type="multiplayerpc" id="1" depth="0" margin="0,0"/>
+	  </tile>
+      <tile type="floor" texture="04"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 24 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <tile type="floor" texture="04"/>
+      <tile type="floor" texture="04"/>
+      <tile type="floor" texture="04"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 25 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="02"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="floor" texture="00"/>
+      <tile type="floor" texture="00"/>
+      <tile type="floor" texture="04"/>
+      <tile type="floor" texture="04"/>
+      <tile type="floor" texture="04"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+	<row>
+	  <!-- Row 26 -->
+	  <!-- Group of five 1 -->
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 2 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 3 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 4 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!-- Group of five 5 -->
+	  <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+      <tile type="obstacle" texture="00"/>
+	  <!--Group of five 6-->
+	  <tile type="obstacle" texture="00"/>
+    </row>
+  </level>
+</map>

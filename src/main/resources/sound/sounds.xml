@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<sounds>
+  <metadata game="wasteland-struggle" version="0.1" date="2010-03-24" author="Joakim Johansson"/>
+  
+	<backsound>
+      <sound filepath="/sound/back.wav" />
+	  <sound filepath="/sound/intro.wav" />
+    </backsound>
+	
+	<mutantsound>
+      <sound filepath="/sound/mutant/kalko.wav" />
+	  <sound filepath="/sound/mutant/kamikaze.wav" />
+    </mutantsound>
+</sounds>
