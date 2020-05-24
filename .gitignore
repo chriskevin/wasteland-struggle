@@ -93,3 +93,19 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.classpath
+.factorypath
+.project
+.settings
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
